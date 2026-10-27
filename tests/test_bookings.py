@@ -63,3 +63,5 @@ def test_cannot_cancel_after_departure(conn):
 
     with pytest.raises(ConflictError, match="after departure"):
         bookings.cancel_booking(conn, 3, now=after_departure)
+
+# Based on IBM's Galaxium Travels demo (https://github.com/IBM/galaxium-travels), Apache License 2.0; cut down and rewritten for Galaxium Lite.

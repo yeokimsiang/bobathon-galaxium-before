@@ -53,3 +53,5 @@ def cancel_booking(conn: sqlite3.Connection, booking_id: int, now: datetime) -> 
     conn.execute("UPDATE bookings SET status = 'cancelled' WHERE id = ?", (booking_id,))
     conn.commit()
     return get_booking(conn, booking_id)
+
+# Based on IBM's Galaxium Travels demo (https://github.com/IBM/galaxium-travels), Apache License 2.0; cut down and rewritten for Galaxium Lite.

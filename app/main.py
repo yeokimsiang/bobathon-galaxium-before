@@ -120,3 +120,5 @@ def cancel_booking(
 # so any route defined below this line will not become an MCP tool.
 mcp = FastApiMCP(app, name="galaxium-lite")
 mcp.mount_http()  # streamable HTTP at /mcp
+
+# Based on IBM's Galaxium Travels demo (https://github.com/IBM/galaxium-travels), Apache License 2.0; cut down and rewritten for Galaxium Lite.
